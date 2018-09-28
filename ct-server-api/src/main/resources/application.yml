@@ -1,0 +1,12 @@
+server:
+  port: 8889                   # 指定该实例的端口
+spring:
+  application:
+    name: ct-server-api # 指定注册到Eureka Server上的应用名称
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8888/eureka/
+  instance:
+    prefer-ip-address: true # 将自己的IP注册到Eureka Server。若不配置或设置为false，表示注册微服务所在操作系统的hostname到Eureka Server
+# https://www.cnblogs.com/jinjiyese153/p/8610789.html
