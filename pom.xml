@@ -13,6 +13,7 @@
         <module>ct-eureka-server</module>
         <module>ct-server-api</module>
         <module>ct-server-book</module>
+        <module>ct-server-admin</module>
     </modules>
 
     <parent>
