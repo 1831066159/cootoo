@@ -23,6 +23,7 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="ct-eureka-server" />
+        <module name="ct-server-admin" />
         <module name="ct-server-api" />
         <module name="ct-server-book" />
       </profile>
@@ -30,6 +31,7 @@
     <bytecodeTargetLevel>
       <module name="cootoo" target="1.8" />
       <module name="ct-eureka-server" target="1.8" />
+      <module name="ct-server-admin" target="1.8" />
       <module name="ct-server-api" target="1.8" />
       <module name="ct-server-book" target="1.8" />
     </bytecodeTargetLevel>
