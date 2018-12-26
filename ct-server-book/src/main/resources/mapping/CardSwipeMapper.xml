@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.cootoo.mapper.CardSwipeMapper">
+  <resultMap id="BaseResultMap" type="cn.com.cootoo.model.CardSwipe">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="bid" jdbcType="BIGINT" property="bid" />
+    <result column="card_no" jdbcType="VARCHAR" property="cardNo" />
+    <result column="amount" jdbcType="VARCHAR" property="amount" />
+    <result column="platform" jdbcType="VARCHAR" property="platform" />
+    <result column="machine_type" jdbcType="VARCHAR" property="machineType" />
+    <result column="rate" jdbcType="VARCHAR" property="rate" />
+    <result column="commission" jdbcType="VARCHAR" property="commission" />
+    <result column="consume_date" jdbcType="VARCHAR" property="consumeDate" />
+    <result column="bill_cycle" jdbcType="VARCHAR" property="billCycle" />
+    <result column="mcc" jdbcType="VARCHAR" property="mcc" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, bid, card_no, amount, platform, machine_type, rate, commission, consume_date, 
+    bill_cycle, mcc, create_time, update_time
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from t_card_swipe
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from t_card_swipe
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="cn.com.cootoo.model.CardSwipe">
+    insert into t_card_swipe (id, bid, card_no, 
+      amount, platform, machine_type, 
+      rate, commission, consume_date, 
+      bill_cycle, mcc, create_time, 
+      update_time)
+    values (#{id,jdbcType=BIGINT}, #{bid,jdbcType=BIGINT}, #{cardNo,jdbcType=VARCHAR}, 
+      #{amount,jdbcType=VARCHAR}, #{platform,jdbcType=VARCHAR}, #{machineType,jdbcType=VARCHAR}, 
+      #{rate,jdbcType=VARCHAR}, #{commission,jdbcType=VARCHAR}, #{consumeDate,jdbcType=VARCHAR}, 
+      #{billCycle,jdbcType=VARCHAR}, #{mcc,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="cn.com.cootoo.model.CardSwipe">
+    insert into t_card_swipe
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="bid != null">
+        bid,
+      </if>
+      <if test="cardNo != null">
+        card_no,
+      </if>
+      <if test="amount != null">
+        amount,
+      </if>
+      <if test="platform != null">
+        platform,
+      </if>
+      <if test="machineType != null">
+        machine_type,
+      </if>
+      <if test="rate != null">
+        rate,
+      </if>
+      <if test="commission != null">
+        commission,
+      </if>
+      <if test="consumeDate != null">
+        consume_date,
+      </if>
+      <if test="billCycle != null">
+        bill_cycle,
+      </if>
+      <if test="mcc != null">
+        mcc,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="bid != null">
+        #{bid,jdbcType=BIGINT},
+      </if>
+      <if test="cardNo != null">
+        #{cardNo,jdbcType=VARCHAR},
+      </if>
+      <if test="amount != null">
+        #{amount,jdbcType=VARCHAR},
+      </if>
+      <if test="platform != null">
+        #{platform,jdbcType=VARCHAR},
+      </if>
+      <if test="machineType != null">
+        #{machineType,jdbcType=VARCHAR},
+      </if>
+      <if test="rate != null">
+        #{rate,jdbcType=VARCHAR},
+      </if>
+      <if test="commission != null">
+        #{commission,jdbcType=VARCHAR},
+      </if>
+      <if test="consumeDate != null">
+        #{consumeDate,jdbcType=VARCHAR},
+      </if>
+      <if test="billCycle != null">
+        #{billCycle,jdbcType=VARCHAR},
+      </if>
+      <if test="mcc != null">
+        #{mcc,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="cn.com.cootoo.model.CardSwipe">
+    update t_card_swipe
+    <set>
+      <if test="bid != null">
+        bid = #{bid,jdbcType=BIGINT},
+      </if>
+      <if test="cardNo != null">
+        card_no = #{cardNo,jdbcType=VARCHAR},
+      </if>
+      <if test="amount != null">
+        amount = #{amount,jdbcType=VARCHAR},
+      </if>
+      <if test="platform != null">
+        platform = #{platform,jdbcType=VARCHAR},
+      </if>
+      <if test="machineType != null">
+        machine_type = #{machineType,jdbcType=VARCHAR},
+      </if>
+      <if test="rate != null">
+        rate = #{rate,jdbcType=VARCHAR},
+      </if>
+      <if test="commission != null">
+        commission = #{commission,jdbcType=VARCHAR},
+      </if>
+      <if test="consumeDate != null">
+        consume_date = #{consumeDate,jdbcType=VARCHAR},
+      </if>
+      <if test="billCycle != null">
+        bill_cycle = #{billCycle,jdbcType=VARCHAR},
+      </if>
+      <if test="mcc != null">
+        mcc = #{mcc,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="cn.com.cootoo.model.CardSwipe">
+    update t_card_swipe
+    set bid = #{bid,jdbcType=BIGINT},
+      card_no = #{cardNo,jdbcType=VARCHAR},
+      amount = #{amount,jdbcType=VARCHAR},
+      platform = #{platform,jdbcType=VARCHAR},
+      machine_type = #{machineType,jdbcType=VARCHAR},
+      rate = #{rate,jdbcType=VARCHAR},
+      commission = #{commission,jdbcType=VARCHAR},
+      consume_date = #{consumeDate,jdbcType=VARCHAR},
+      bill_cycle = #{billCycle,jdbcType=VARCHAR},
+      mcc = #{mcc,jdbcType=VARCHAR},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
