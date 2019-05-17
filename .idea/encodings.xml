@@ -6,5 +6,6 @@
     <file url="file://$PROJECT_DIR$/ct-server-admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ct-server-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ct-server-book" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ct-server-service" charset="UTF-8" />
   </component>
 </project>

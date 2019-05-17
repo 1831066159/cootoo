@@ -1,6 +1,7 @@
 server:
   port: 8885                   # 指定该实例的端口
 
+
 spring:
     datasource:
         name: test

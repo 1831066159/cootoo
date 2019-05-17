@@ -1,0 +1,29 @@
+限流
+    常用的限流方式和场景有：限制总并发数（比如数据库连接池、线程池）、
+                        限制瞬时并发数（如nginx的limit_conn模块，用来限制瞬时并发连接数，Java的Semaphore也可以实现）、
+                        限制时间窗口内的平均速率（如Guava的RateLimiter、nginx的limit_req模块，限制每秒的平均速率）；
+                        其他还有如限制远程接口调用速率、限制MQ的消费速率。
+                        另外还可以根据网络连接数、网络流量、CPU或内存负载等来限流。
+
+    1.限流算法有：令牌桶、漏桶。计数器也可以进行粗暴限流实现
+    2.考虑方向:
+        a.接入层面
+            1.nginx, limit_conn \ limit_req
+            2.网关: zuul
+
+        b.资源层面
+            1.连接池
+            2.最大连接数
+
+        c.代码层面
+             1.google的基础库guava中包含了一个基于令牌桶的限速器RateLimiter
+             2.java 信号量
+             3.
+
+熔断
+    1.
+缓存
+
+降级
+
+https://github.com/hirudy/java_lib/blob/master/src/main/java/CBTestApp.java
