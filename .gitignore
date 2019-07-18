@@ -11,6 +11,7 @@
 *.iml
 *.zip
 *.checkstyle
+*.log
 target
 bin
 build
