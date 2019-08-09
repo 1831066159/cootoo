@@ -36,7 +36,7 @@ public class MyThreadLocalTest {
         variableLocal.set(variableLocal.get() + 1);
     }
 
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         ExecutorService executorService = new ThreadPoolExecutor(2, 2, 0, TimeUnit.SECONDS, new LinkedBlockingDeque<>(12));
 
         for (int i = 0; i < 5; i++) {
@@ -58,4 +58,22 @@ public class MyThreadLocalTest {
         executorService.shutdown();
     }
 
+
+    /**
+     * 在子进程中访问父进程变量
+     */
+    public static void main(String[] args) {
+        Integer requestId = new Integer(5);
+        // 在子进程中访问父进程变量
+        InheritableThreadLocal<Integer> requestIdThreadLocal = new InheritableThreadLocal<>();
+        requestIdThreadLocal.set(requestId);
+        System.out.println("Thread:" + Thread.currentThread().getId() + ", 首先打印requestId:" + requestIdThreadLocal.get());
+        (new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("子线程启动");
+                System.out.println("Thread:" + Thread.currentThread().getId() + ",在子线程中访问requestId:" + requestIdThreadLocal.get());
+            }
+        })).start();
+    }
 }
