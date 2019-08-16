@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ct-eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ct-gateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ct-server-admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ct-server-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ct-server-book" charset="UTF-8" />

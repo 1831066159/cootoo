@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+
+    <property name="logBase" value="/opt/logs" />
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy/MM/dd-HH:mm:ss} %level [%thread] %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logBase}/admin-zuul-proxy-svc.log</file>
+        <append>true</append>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logBase}/admin-zuul-proxy-svc.log.%d{yyyy-MM-dd}</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%d{yyyy/MM/dd-HH:mm:ss} %level [%thread] %logger{35} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+
+    <!--<logger name="org.apache.http" additivity="false" level="INFO" >-->
+        <!--<appender-ref ref="FILE"/>-->
+    <!--</logger>-->
+
+    <!--<logger name="org.springframework" additivity="false" level="INFO" >-->
+        <!--<appender-ref ref="FILE"/>-->
+    <!--</logger>-->
+
+    <!--<logger name="org.springframework" additivity="false" level="ERROR">-->
+        <!--<appender-ref ref="FILE"/>-->
+    <!--</logger>-->
+
+
+    <logger name="cn.com.cootoo" additivity="false" level="info">
+        <appender-ref ref="FILE"/>
+        <!--<appender-ref ref="STDOUT"/>-->
+    </logger>
+    <logger name="com.netflix" additivity="false" level="error">
+        <appender-ref ref="FILE"/>
+        <!--<appender-ref ref="STDOUT"/>-->
+    </logger>
+    <logger name="org.springframework" additivity="false" level="error">
+        <appender-ref ref="FILE"/>
+        <!--<appender-ref ref="STDOUT"/>-->
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="FILE"/>
+        <!--<appender-ref ref="STDOUT"/>-->
+    </root>
+
+</configuration>
+

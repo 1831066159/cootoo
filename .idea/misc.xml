@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/ct-server-book/pom.xml" />
         <option value="$PROJECT_DIR$/ct-server-admin/pom.xml" />
         <option value="$PROJECT_DIR$/ct-server-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ct-gateway/pom.xml" />
       </list>
     </option>
   </component>

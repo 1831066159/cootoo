@@ -1,0 +1,20 @@
+
+server:
+  port: 8885                   # 指定该实例的端口
+
+spring:
+  application:
+    name: gateway
+
+
+eureka:
+  client:
+    service-url:
+      default-Zone: http://localhost:8888/eureka
+
+
+zuul:
+  routes:
+    sodik:
+      path: /security/**
+      url: http://localhost:8885/security/
