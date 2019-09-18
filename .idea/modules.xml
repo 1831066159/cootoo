@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/cootoo.iml" filepath="$PROJECT_DIR$/cootoo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ct-base-demo/ct-base-demo.iml" filepath="$PROJECT_DIR$/ct-base-demo/ct-base-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ct-common/ct-common.iml" filepath="$PROJECT_DIR$/ct-common/ct-common.iml" />
       <module fileurl="file://$PROJECT_DIR$/ct-eureka-server/ct-eureka-server.iml" filepath="$PROJECT_DIR$/ct-eureka-server/ct-eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/ct-gateway/ct-gateway.iml" filepath="$PROJECT_DIR$/ct-gateway/ct-gateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/ct-server-admin/ct-server-admin.iml" filepath="$PROJECT_DIR$/ct-server-admin/ct-server-admin.iml" />

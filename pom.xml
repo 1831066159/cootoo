@@ -10,6 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
+        <module>ct-common</module>
         <module>ct-eureka-server</module>
         <module>ct-server-api</module>
         <module>ct-server-book</module>
@@ -30,7 +31,6 @@
         <spring-cloud.version>Finchley.RC2</spring-cloud.version>
     </properties>
 
-
     <dependencyManagement>   <!--dependencyManagement用于管理依赖版本号-->
         <dependencies>
             <!-- 删除spring-boot-starter和spring-boot-starter-test,因为parent中继承的祖先中已经有了，并且一般dependencyManagement管理的依赖都要写版本号 -->
@@ -42,7 +42,6 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
-
 
         </dependencies>
     </dependencyManagement>

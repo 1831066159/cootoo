@@ -22,6 +22,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="ct-base-demo" />
+        <module name="ct-common" />
         <module name="ct-eureka-server" />
         <module name="ct-gateway" />
         <module name="ct-server-admin" />
@@ -32,6 +34,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cootoo" target="1.8" />
+      <module name="ct-base-demo" target="1.8" />
+      <module name="ct-common" target="1.8" />
       <module name="ct-eureka-server" target="1.8" />
       <module name="ct-gateway" target="1.8" />
       <module name="ct-server-admin" target="1.8" />

@@ -23,6 +23,8 @@
         <option value="$PROJECT_DIR$/ct-server-admin/pom.xml" />
         <option value="$PROJECT_DIR$/ct-server-service/pom.xml" />
         <option value="$PROJECT_DIR$/ct-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/ct-common/pom.xml" />
+        <option value="$PROJECT_DIR$/ct-base-demo/pom.xml" />
       </list>
     </option>
   </component>
