@@ -30,11 +30,14 @@
         <module name="ct-server-api" />
         <module name="ct-server-book" />
         <module name="ct-server-service" />
+        <module name="ct.base.demo" />
+        <module name="ct.base.graph" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cootoo" target="1.8" />
       <module name="ct-base-demo" target="1.8" />
+      <module name="ct-base-graph" target="1.8" />
       <module name="ct-common" target="1.8" />
       <module name="ct-eureka-server" target="1.8" />
       <module name="ct-gateway" target="1.8" />
@@ -42,6 +45,8 @@
       <module name="ct-server-api" target="1.8" />
       <module name="ct-server-book" target="1.8" />
       <module name="ct-server-service" target="1.8" />
+      <module name="ct.base.demo" target="1.8" />
+      <module name="ct.base.graph" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

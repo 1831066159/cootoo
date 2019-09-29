@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.com.cootoo.mapper.UserMapper">
-  <resultMap id="BaseResultMap" type="cn.com.cootoo.model.User">
+<mapper namespace="cn.com.cootoo.graph.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="cn.com.cootoo.graph.model.User">
     <id column="user_id" jdbcType="INTEGER" property="userId" />
     <result column="user_name" jdbcType="VARCHAR" property="userName" />
     <result column="password" jdbcType="VARCHAR" property="password" />
@@ -20,13 +20,13 @@
     delete from t_user
     where user_id = #{userId,jdbcType=INTEGER}
   </delete>
-  <insert id="insert" parameterType="cn.com.cootoo.model.User">
+  <insert id="insert" parameterType="cn.com.cootoo.graph.model.User">
     insert into t_user (user_id, user_name, password, 
       phone)
     values (#{userId,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
       #{phone,jdbcType=VARCHAR})
   </insert>
-  <insert id="insertSelective" parameterType="cn.com.cootoo.model.User">
+  <insert id="insertSelective" parameterType="cn.com.cootoo.graph.model.User">
     insert into t_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="userId != null">
@@ -57,7 +57,7 @@
       </if>
     </trim>
   </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="cn.com.cootoo.model.User">
+  <update id="updateByPrimaryKeySelective" parameterType="cn.com.cootoo.graph.model.User">
     update t_user
     <set>
       <if test="userName != null">
@@ -72,7 +72,7 @@
     </set>
     where user_id = #{userId,jdbcType=INTEGER}
   </update>
-  <update id="updateByPrimaryKey" parameterType="cn.com.cootoo.model.User">
+  <update id="updateByPrimaryKey" parameterType="cn.com.cootoo.graph.model.User">
     update t_user
     set user_name = #{userName,jdbcType=VARCHAR},
       password = #{password,jdbcType=VARCHAR},

@@ -25,6 +25,7 @@
         <option value="$PROJECT_DIR$/ct-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/ct-common/pom.xml" />
         <option value="$PROJECT_DIR$/ct-base-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/ct-base-graph/pom.xml" />
       </list>
     </option>
   </component>

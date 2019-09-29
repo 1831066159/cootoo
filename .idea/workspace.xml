@@ -2,38 +2,344 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae379e3d-0c1f-45f2-88ab-b5fdd82f735b" name="Default" comment="线程池下 threadLocal 问题demo">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/.mvn/wrapper/maven-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-common/.mvn/wrapper/maven-wrapper.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/.mvn/wrapper/MavenWrapperDownloader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/.mvn/wrapper/maven-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/CtBaseDemoApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/GraphService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/config/Neo4jConfig.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/node/Loan.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/reporsitory/LoanReporsitory.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/src/main/resources/application.yml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/src/test/java/cn/com/cootoo/CtBaseDemoApplicationTests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-base-demo/src/test/java/cn/com/cootoo/demo/neo4j/GraphServiceTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-common/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-common/.mvn/wrapper/MavenWrapperDownloader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-common/.mvn/wrapper/maven-wrapper.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-common/pom.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-common/src/main/java/cn/com/cootoo/CtCommonApplication.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-common/src/main/java/cn/com/cootoo/atom/DistributeLock.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-common/src/main/resources/application.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-common/src/test/java/cn/com/cootoo/CtCommonApplicationTests.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ct-server-service/mvnw" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ct-server-service/mvnw.cmd" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/mvnw" afterPath="$PROJECT_DIR$/ct-common/mvnw" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/mvnw.cmd" afterPath="$PROJECT_DIR$/ct-common/mvnw.cmd" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/classes/cn/com/cootoo/CtGatewayApplication.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/classes/cn/com/cootoo/ProxyHelper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/classes/cn/com/cootoo/common/BaseController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/classes/cn/com/cootoo/common/SecurityController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/classes/cn/com/cootoo/filter/AccessLogPostFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/classes/cn/com/cootoo/filter/AccessLogPreFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/classes/cn/com/cootoo/filter/FilterWarper.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/classes/cn/com/cootoo/filter/ProxyErrFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/classes/cn/com/cootoo/filter/ProxyHeaderFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/classes/cn/com/cootoo/filter/SendErrFilter.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/test-classes/cn/com/cootoo/CtGatewayApplicationTests.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ct_server_book_war.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/ct_server_book_war_exploded.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/file.template.settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__asm_asm_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_spring_boot_starter_1_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_joda_2_9_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_9_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_gitee_sunchenbin_mybatis_actable_mybatis_enhance_actable_1_0_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_stephenc_findbugs_findbugs_annotations_1_3_9_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_api_grpc_proto_google_common_protos_1_0_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_1_3_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_26_0_android.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_2_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_util_3_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_42.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_lmax_disruptor_3_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_4_21.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_4_21.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_serialization_1_5_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_zuul_zuul_core_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_client_1_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_core_1_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jersey_jersey_server_1_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_paranamer_paranamer_2_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_yammer_metrics_metrics_core_2_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_2_7_9.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_daemon_commons_daemon_1_0_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_el_commons_el_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_net_commons_net_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_etcd_jetcd_common_0_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_etcd_jetcd_core_0_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_etcd_jetcd_resolver_0_3_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_context_1_17_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_core_1_17_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_grpclb_1_17_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_netty_1_17_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_protobuf_1_17_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_protobuf_lite_1_17_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_grpc_grpc_stub_1_17_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_6_2_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_36_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_24_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_24_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_24_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_24_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_api_0_17_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_opencensus_opencensus_contrib_grpc_metrics_0_17_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_reactive_streams_1_2_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_12.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_avro_avro_1_7_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_compress_1_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_math3_3_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_api_api_asn1_api_1_0_0_M20.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_api_api_util_1_0_0_M20.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_server_apacheds_i18n_2_0_0_M15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_directory_server_apacheds_kerberos_codec_2_0_0_M15.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_annotations_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_auth_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_client_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_common_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_hdfs_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_app_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_common_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_core_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_jobclient_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_mapreduce_client_shuffle_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_api_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_client_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_common_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hadoop_hadoop_yarn_server_common_2_5_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_annotations_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_client_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_common_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_common_tests_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_hadoop2_compat_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_hadoop_compat_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_prefix_tree_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_procedure_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_protocol_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_hbase_hbase_server_1_3_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_htrace_htrace_core_3_1_0_incubating.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_11.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_3_17.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_17.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_17.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_jasper_8_5_31.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_31.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_11_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_attoparser_attoparser_2_0_4_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_compat_qual_2_5_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_jaxrs_1_9_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_mojo_animal_sniffer_annotations_1_17.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jdt_ecj_3_12_3.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_fusesource_leveldbjni_leveldbjni_all_1_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_2_17_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jamon_jamon_runtime_2_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_3_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jruby_jcodings_jcodings_1_0_8.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jruby_joni_joni_2_1_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_6_1_26.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_sslengine_6_1_26.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jetty_util_6_1_26.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jsp_2_1_6_1_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_jsp_api_2_1_6_1_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mortbay_jetty_servlet_api_2_5_6_1_14.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_generator_mybatis_generator_core_1_3_5.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_6.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_20.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_26.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_21.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_26.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_21.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_26.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_0_2_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_zuul_2_0_0_RC2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_0_0_RC2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_0_0_RC2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_0_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_0_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_7_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_0_6_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_1_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_3_0_9_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring5_3_0_9_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_tukaani_xz_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_5_RELEASE.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_0_4_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_6_2.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_23.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_3_0_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tomcat_jasper_compiler_5_5_23.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tomcat_jasper_runtime_5_5_23.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xmlenc_xmlenc_0_52.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-common/HELP.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-common/ct-common.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-eureka-server/ct-eureka-server.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/HELP.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/ct-gateway.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/classes/application.properties" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-gateway/target/classes/application.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-server-admin/ct-server-admin.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-server-api/ct-server-api.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-server-book/ct-server-book.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-server-service/HELP.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ct-server-service/ct-server-service.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/logContentFile.log" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct-base-demo/.mvn/wrapper/MavenWrapperDownloader.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct-base-demo/.mvn/wrapper/maven-wrapper.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct-base-demo/.mvn/wrapper/maven-wrapper.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/GraphService.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/config/Neo4jConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/node/Loan.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/reporsitory/LoanReporsitory.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/ct-base-demo/src/test/java/cn/com/cootoo/CtBaseDemoApplicationTests.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-base-demo/.gitignore" afterPath="$PROJECT_DIR$/ct-base-graph/.gitignore" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-base-demo/pom.xml" afterPath="$PROJECT_DIR$/ct-base-graph/pom.xml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/CtBaseDemoApplication.java" afterPath="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/GraphApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-base-demo/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/ct-base-graph/src/main/resources/application.yml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-base-demo/src/test/java/cn/com/cootoo/demo/neo4j/GraphServiceTest.java" afterPath="$PROJECT_DIR$/ct-base-graph/src/test/java/cn/com/cootoo/graph/demo/neo4j/GraphServiceTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-common/src/main/java/cn/com/cootoo/CtCommonApplication.java" afterPath="$PROJECT_DIR$/ct-common/src/main/java/cn/com/cootoo/graph/CtCommonApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-common/src/main/java/cn/com/cootoo/atom/DistributeLock.java" afterPath="$PROJECT_DIR$/ct-common/src/main/java/cn/com/cootoo/graph/atom/DistributeLock.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-common/src/test/java/cn/com/cootoo/CtCommonApplicationTests.java" afterPath="$PROJECT_DIR$/ct-common/src/test/java/cn/com/cootoo/graph/CtCommonApplicationTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/CtEurekaServerApplication.java" afterPath="$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/graph/CtEurekaServerApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/spi/IWatchDogService.java" afterPath="$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/graph/spi/IWatchDogService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/spi/WatchDogMainTest.java" afterPath="$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/graph/spi/WatchDogMainTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/spi/impl/WatcherDogBlackServiceImpl.java" afterPath="$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/graph/spi/impl/WatcherDogBlackServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/spi/impl/WatcherDogGreyServiceImpl.java" afterPath="$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/graph/spi/impl/WatcherDogGreyServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-eureka-server/src/test/java/cn/com/cootoo/CtEurekaServerApplicationTests.java" afterPath="$PROJECT_DIR$/ct-eureka-server/src/test/java/cn/com/cootoo/graph/CtEurekaServerApplicationTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/CtGatewayApplication.java" afterPath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/graph/CtGatewayApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/ProxyHelper.java" afterPath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/graph/ProxyHelper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/common/BaseController.java" afterPath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/graph/common/BaseController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/common/SecurityController.java" afterPath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/graph/common/SecurityController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter/AccessLogPostFilter.java" afterPath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/graph/filter/AccessLogPostFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter/AccessLogPreFilter.java" afterPath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/graph/filter/AccessLogPreFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter/FilterWarper.java" afterPath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/graph/filter/FilterWarper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter/ProxyErrFilter.java" afterPath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/graph/filter/ProxyErrFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter/ProxyHeaderFilter.java" afterPath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/graph/filter/ProxyHeaderFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter/SendErrFilter.java" afterPath="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/graph/filter/SendErrFilter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-gateway/src/test/java/cn/com/cootoo/CtGatewayApplicationTests.java" afterPath="$PROJECT_DIR$/ct-gateway/src/test/java/cn/com/cootoo/graph/CtGatewayApplicationTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-admin/src/main/java/cn/com/cootoo/CtServerAdminApplication.java" afterPath="$PROJECT_DIR$/ct-server-admin/src/main/java/cn/com/cootoo/graph/CtServerAdminApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-admin/src/test/java/cn/com/cootoo/CtServerAdminApplicationTests.java" afterPath="$PROJECT_DIR$/ct-server-admin/src/test/java/cn/com/cootoo/graph/CtServerAdminApplicationTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-api/src/main/java/cn/com/cootoo/CtServerApiApplication.java" afterPath="$PROJECT_DIR$/ct-server-api/src/main/java/cn/com/cootoo/graph/CtServerApiApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-api/src/test/java/cn/com/cootoo/CtServerApiApplicationTests.java" afterPath="$PROJECT_DIR$/ct-server-api/src/test/java/cn/com/cootoo/graph/CtServerApiApplicationTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/CtServerBookApplication.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/CtServerBookApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/common/TestSort.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/common/TestSort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/controller/BaseController.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/controller/BaseController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/controller/CardController.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/controller/CardController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/controller/NoteBookController.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/controller/NoteBookController.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/mapper/CardInfoMapper.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/mapper/CardInfoMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/mapper/CardSwipeMapper.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/mapper/CardSwipeMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/mapper/UserMapper.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/mapper/UserMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/model/CardInfo.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/model/CardInfo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/model/CardSwipe.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/model/CardSwipe.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/model/User.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/model/User.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/service/UserService.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/service/UserService.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/service/UserServiceImpl.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/service/UserServiceImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/AddressUtils.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/AddressUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/Base64.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/Base64.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/CalendarTool.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/CalendarTool.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/DateFormatTool.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/DateFormatTool.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/DateTool.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/DateTool.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/EasyHttpUtils.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/EasyHttpUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/FormatUtil.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/FormatUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/GenerateIdUtil.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/GenerateIdUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/HmacSHAUtil.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/HmacSHAUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/MD5Util.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/MD5Util.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/PhoneNumCheckUtils.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/PhoneNumCheckUtils.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/RandomString.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/RandomString.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/RsaCodingUtil.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/RsaCodingUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/RsaConst.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/RsaConst.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/RsaReadUtil.java" afterPath="$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/RsaReadUtil.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/test/java/cn/com/cootoo/CtServerBookApplicationTests.java" afterPath="$PROJECT_DIR$/ct-server-book/src/test/java/cn/com/cootoo/graph/CtServerBookApplicationTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-book/src/test/java/cn/com/cootoo/Mytest.java" afterPath="$PROJECT_DIR$/ct-server-book/src/test/java/cn/com/cootoo/graph/Mytest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/CtServerServiceApplication.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/CtServerServiceApplication.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/algorithm/README.md" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/algorithm/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/algorithm/dongtaiguihua/DongTai01.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/algorithm/dongtaiguihua/DongTai01.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/cache/README.ME" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/cache/README.ME" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/cache/UPipeline.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/cache/UPipeline.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/hbase/HbaseOP.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/hbase/HbaseOP.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/hbase/User.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/hbase/User.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/leetcode/Solution_1.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/leetcode/Solution_1.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/leetcode/Solution_2.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/leetcode/Solution_2.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/limit/RateLimiterDemo.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/limit/RateLimiterDemo.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/pc/Consumer.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/pc/Consumer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/pc/PCData.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/pc/PCData.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/pc/Producer.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/pc/Producer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/pc/README.ME" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/pc/README.ME" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/pc/TestMain.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/pc/TestMain.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/CglibProxyTest.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/proxy/CglibProxyTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/DecoratorTest.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/proxy/DecoratorTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/DynamicProxyTest.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/proxy/DynamicProxyTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/ITest.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/proxy/ITest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/ProxyPerfMainTester.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/proxy/ProxyPerfMainTester.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/README.md" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/proxy/README.md" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/TestImpl.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/proxy/TestImpl.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/sort/HeapSort.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/sort/HeapSort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/sort/MergeSort.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/sort/MergeSort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/sort/QuickSort.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/sort/QuickSort.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/sort/SortSolutions.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/sort/SortSolutions.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/thread/MyThreadLocalTest.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/thread/MyThreadLocalTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/utils/MD5Util.java" afterPath="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/utils/MD5Util.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/test/java/cn/com/cootoo/CtServerServiceApplicationTests.java" afterPath="$PROJECT_DIR$/ct-server-service/src/test/java/cn/com/cootoo/graph/CtServerServiceApplicationTests.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/test/java/cn/com/cootoo/ExcelMD5.java" afterPath="$PROJECT_DIR$/ct-server-service/src/test/java/cn/com/cootoo/graph/ExcelMD5.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/test/java/cn/com/cootoo/FileListener.java" afterPath="$PROJECT_DIR$/ct-server-service/src/test/java/cn/com/cootoo/graph/FileListener.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/test/java/cn/com/cootoo/TestRateLimiter.java" afterPath="$PROJECT_DIR$/ct-server-service/src/test/java/cn/com/cootoo/graph/TestRateLimiter.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/ct-server-service/src/test/java/cn/com/cootoo/ThreadTest.java" afterPath="$PROJECT_DIR$/ct-server-service/src/test/java/cn/com/cootoo/graph/ThreadTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cootoo.iml" afterPath="$PROJECT_DIR$/cootoo.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ct-server-book/src/main/resources/mapping/CardInfoMapper.xml" afterPath="$PROJECT_DIR$/ct-server-book/src/main/resources/mapping/CardInfoMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ct-server-book/src/main/resources/mapping/CardSwipeMapper.xml" afterPath="$PROJECT_DIR$/ct-server-book/src/main/resources/mapping/CardSwipeMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ct-server-book/src/main/resources/mapping/UserMapper.xml" afterPath="$PROJECT_DIR$/ct-server-book/src/main/resources/mapping/UserMapper.xml" />
     </list>
     <ignored path="cootoo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,6 +354,7 @@
     <ignored path="$PROJECT_DIR$/ct-gateway/target/" />
     <ignored path="$PROJECT_DIR$/ct-common/target/" />
     <ignored path="$PROJECT_DIR$/ct-base-demo/target/" />
+    <ignored path="$PROJECT_DIR$/ct-base-graph/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,43 +372,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="CtBaseDemoApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/CtBaseDemoApplication.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ct-base-graph/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ct-base-demo/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ct-server-service/pom.xml">
+      <file leaf-file-name="UserLoanRelationService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/service/UserLoanRelationService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Loan.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/node/Loan.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+            <state relative-caret-position="645">
+              <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -109,41 +394,43 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphServiceTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ct-base-demo/src/test/java/cn/com/cootoo/demo/neo4j/GraphServiceTest.java">
+      <file leaf-file-name="BaseNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/base/BaseNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="150">
+              <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SortSolutions.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/sort/SortSolutions.java">
+      <file leaf-file-name="BaseRelation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/base/BaseRelation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-214">
-              <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+            <state relative-caret-position="180">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HeapSort.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/sort/HeapSort.java">
+      <file leaf-file-name="LoanInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/node/LoanInfo.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfo.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/node/UserInfo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="300">
-              <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LoanReporsitory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/reporsitory/LoanReporsitory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="18" column="26" selection-start-line="17" selection-start-column="3" selection-end-line="18" selection-end-column="26" />
+              <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -151,21 +438,33 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CtBaseDemoApplicationTests.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ct-base-demo/src/test/java/cn/com/cootoo/CtBaseDemoApplicationTests.java">
+      <file leaf-file-name="UserLoanRelation.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/relation/UserLoanRelation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="450">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoanDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/dao/bizz/risk/LoanDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GraphService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/GraphService.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state relative-caret-position="581">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -197,39 +496,16 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/ct-common/src/main/java/cn/com/cootoo/atom/DistributeLock.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/limit/RateLimiterDemo.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/sort/SortSolutions.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/pc/Producer.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/sort/QuickSort.java" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/utils/EasyHttpUtils.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ct-common/src/main/java/cn/com/cootoo/graph/atom/DistributeLock.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/limit/RateLimiterDemo.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/sort/SortSolutions.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/pc/Producer.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/sort/QuickSort.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/utils/EasyHttpUtils.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/cache/UPipeline.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/utils/MD5Util.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/test/java/cn/com/cootoo/ExcelMD5.java" />
-        <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/thread/MyThreadLocalTest.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/hbase/User.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/hbase/HbaseOP.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/resources/hbase-site.xml" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/ITestFace.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/ShowTest.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/README.md" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/CglibProxyTest.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/DecoratorTest.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/DynamicProxyTest.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/ProxyPerfMainTester.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/TestImpl.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/proxy/ITest.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/limit/RateLimiterDemo.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/algorithm/README.md" />
-        <option value="$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/algorithm/dongtaiguihua/DongTai01.java" />
-        <option value="$PROJECT_DIR$/ct-server-service/pom.xml" />
-        <option value="$PROJECT_DIR$/ct-gateway/.gitignore" />
-        <option value="$PROJECT_DIR$/ct-gateway/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/CtGatewayApplication.java" />
         <option value="$PROJECT_DIR$/ct-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/common/BaseController.java" />
@@ -258,6 +534,29 @@
         <option value="$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/reporsitory/LoanReporsitory.java" />
         <option value="$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/CtBaseDemoApplication.java" />
         <option value="$PROJECT_DIR$/ct-base-demo/pom.xml" />
+        <option value="$PROJECT_DIR$/ct-base-graph/.gitignore" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/GraphApplication.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/resources/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/common/mongodb/EnableMongoPool.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/config/GraphDBConfiguration.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/constant/EasyRelationType.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/controller/LoanController.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/bizz/risk/Loan.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/test/java/cn/com/cootoo/graph/GraphApplicationTests.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/dao/neo4j/repository/LoanInfoRepository.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/dao/neo4j/repository/UserInfoRepository.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/dao/neo4j/repository/UserLoanRelationRepository.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/test/java/cn/com/cootoo/graph/GraphApplicationTest.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/service/LoanInfoService.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/service/UserInfoService.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/service/BaseService.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/service/UserLoanRelationService.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/node/LoanInfo.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/node/UserInfo.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/relation/UserLoanRelation.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/dao/bizz/risk/LoanDAO.java" />
+        <option value="$PROJECT_DIR$/ct-base-graph/pom.xml" />
       </list>
     </option>
   </component>
@@ -280,7 +579,38 @@
     </option>
   </component>
   <component name="MavenProjectNavigator">
-    <treeState />
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ct-base-demo" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="ct-base-demo" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
   </component>
   <component name="PhpServers">
     <servers />
@@ -317,6 +647,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -345,7 +678,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ct-server-service" />
+              <option name="myItemId" value="ct-base-graph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -359,7 +692,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ct-server-service" />
+              <option name="myItemId" value="ct-base-graph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -377,29 +710,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ct-server-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ct-server-service" />
+              <option name="myItemId" value="ct-base-graph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -408,152 +719,11 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ct-server-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sort" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ct-base-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ct-base-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ct-base-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="neo4j" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="cootoo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ct-base-demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -565,23 +735,25 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ct-base-graph" />
     <property name="GO_FMT" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.com.cootoo.graph.controller" />
+      <recent name="cn.com.cootoo.graph.config" />
       <recent name="cn.com.cootoo.utils" />
       <recent name="cn.com.cootoo" />
       <recent name="cn.com.cootoo.controller" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph" />
+      <recent name="$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/common" />
+      <recent name="$PROJECT_DIR$/ct-base-graph/src/main/resources" />
       <recent name="$PROJECT_DIR$/ct-common/src/main/resources" />
       <recent name="$PROJECT_DIR$/ct-gateway/src/main/resources" />
-      <recent name="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo" />
-      <recent name="$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter" />
-      <recent name="$PROJECT_DIR$/ct-server-service/src/main/resources" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.CtBaseDemoApplication">
@@ -1408,32 +1580,30 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="CtServerApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
+    <configuration default="false" name="CtServerApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.cootoo.CtServerApiApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.cootoo.graph.CtServerApiApplication" />
       <module name="ct-server-api" />
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="CtEurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" singleton="false">
+    <configuration default="false" name="CtEurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.cootoo.CtEurekaServerApplication" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.cootoo.graph.CtEurekaServerApplication" />
       <module name="ct-eureka-server" />
       <envs />
       <method />
     </configuration>
     <configuration default="false" name="CtServerAdminApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.cootoo.CtServerAdminApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.cootoo.graph.CtServerAdminApplication" />
       <module name="ct-server-admin" />
       <envs />
       <method />
     </configuration>
     <configuration default="false" name="CtServerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.cootoo.CtServerServiceApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.cootoo.graph.CtServerServiceApplication" />
       <module name="ct-server-service" />
       <envs />
       <method />
@@ -1447,7 +1617,7 @@
     </configuration>
     <configuration default="false" name="CtCommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.cootoo.CtCommonApplication" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.cootoo.graph.CtCommonApplication" />
       <module name="ct-common" />
       <envs />
       <method />
@@ -1459,7 +1629,14 @@
       <envs />
       <method />
     </configuration>
-    <list size="14">
+    <configuration default="false" name="GraphApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.com.cootoo.graph.GraphApplication" />
+      <module name="ct-base-graph" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="15">
       <item index="0" class="java.lang.String" itemvalue="Maven.mybatis-generator" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.CtServerBookApplication" />
       <item index="2" class="java.lang.String" itemvalue="Spring Boot.CtServerApiApplication" />
@@ -1474,6 +1651,7 @@
       <item index="11" class="java.lang.String" itemvalue="Application.CtGatewayApplication" />
       <item index="12" class="java.lang.String" itemvalue="Application.DistributeLock" />
       <item index="13" class="java.lang.String" itemvalue="JUnit.GraphServiceTest.testGetLoan" />
+      <item index="14" class="java.lang.String" itemvalue="Spring Boot.GraphApplication" />
     </list>
     <recent_temporary>
       <list size="5">
@@ -1541,7 +1719,8 @@
       <workItem from="1566288615958" duration="8199000" />
       <workItem from="1566782058709" duration="74000" />
       <workItem from="1568165054459" duration="5619000" />
-      <workItem from="1568794805566" duration="905000" />
+      <workItem from="1568794805566" duration="2582000" />
+      <workItem from="1569742605493" duration="3403000" />
     </task>
     <task id="LOCAL-00001" summary="添加mybaits-generator">
       <created>1539339858587</created>
@@ -1628,25 +1807,27 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="159909000" />
+    <option name="totallyTimeSpent" value="164989000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-476" y="-1080" width="1920" height="1080" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="PrintInConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28966987" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28966987" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35264227" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35060975" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18317358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18317358" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1654,18 +1835,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39939025" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Mongo Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39939025" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="PrintInConsole" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43495935" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35264227" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1703,230 +1882,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/test/java/cn/com/cootoo/CtGatewayApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/mvnw.cmd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/controller/NoteBookController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/controller/CardController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/controller/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/common/BaseController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="5" selection-start-line="16" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/common/SecurityController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter/FilterWarper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/ProxyHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="27" column="21" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter/ProxyErrFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="50" column="46" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter/ProxyHeaderFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter/SendErrFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1200">
-          <caret line="107" column="26" selection-start-line="107" selection-start-column="26" selection-end-line="107" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter/AccessLogPostFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="960">
-          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/filter/AccessLogPreFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="75" column="29" selection-start-line="75" selection-start-column="29" selection-end-line="75" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/spi/IWatchDogService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/spi/impl/WatcherDogBlackServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/spi/impl/WatcherDogGreyServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/java/cn/com/cootoo/CtGatewayApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-gateway/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-eureka-server/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-eureka-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-eureka-server/src/main/java/cn/com/cootoo/CtEurekaServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-common/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-common/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-eureka-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-common/src/main/java/cn/com/cootoo/atom/DistributeLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-common/src/main/java/cn/com/cootoo/CtCommonApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/io/etcd/jetcd-core/0.3.0/jetcd-core-0.3.0.jar!/io/etcd/jetcd/Lease.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-server-book/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/data/spring-data-neo4j/5.1.10.RELEASE/spring-data-neo4j-5.1.10.RELEASE.jar!/org/springframework/data/neo4j/repository/config/EnableNeo4jRepositories.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1949,22 +1904,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="705">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-base-demo/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/config/Neo4jConfig.java">
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/demo/neo4j/config/Neo4jConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
@@ -1972,68 +1912,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/GraphService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/CtBaseDemoApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/CtServerBookApplication.java">
+    <entry file="file://$PROJECT_DIR$/ct-server-book/src/main/java/cn/com/cootoo/graph/CtServerBookApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/node/Loan.java">
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/demo/neo4j/node/Loan.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
           <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ct-base-demo/src/main/java/cn/com/cootoo/demo/neo4j/reporsitory/LoanReporsitory.java">
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/demo/neo4j/reporsitory/LoanReporsitory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="18" column="26" selection-start-line="17" selection-start-column="3" selection-end-line="18" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/test/java/cn/com/cootoo/graph/demo/neo4j/GraphServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ct-base-demo/src/test/java/cn/com/cootoo/CtBaseDemoApplicationTests.java">
+    <entry file="file://$PROJECT_DIR$/ct-base-demo/mvnw" />
+    <entry file="file://$PROJECT_DIR$/ct-server-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
+        <state relative-caret-position="135">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ct-base-demo/src/test/java/cn/com/cootoo/demo/neo4j/GraphServiceTest.java">
+    <entry file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/sort/SortSolutions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="1380">
+          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ct-base-demo/mvnw">
+    <entry file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/sort/HeapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/graph/sort/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="51" column="3" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/ct-base-graph.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -2041,7 +2002,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ct-base-demo/HELP.md">
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/ct-base-demo.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/HELP.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="0">
@@ -2052,34 +2021,286 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ct-base-demo/pom.xml">
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/demo/neo4j/GraphService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="345">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ct-server-service/pom.xml">
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="420">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/common/mongodb/MongoPoolInit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/common/mongodb/PoolAttributeTag.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/common/mongodb/MongoPoolProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/common/mongodb/MongoPoolAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/common/mongodb/EnableMongoPool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="18" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/config/GraphDBConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/constant/EasyNodeType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/constant/EasyRelationType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/dao/bizz/risk/LoanExtDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/controller/LoanController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/bizz/risk/Loan.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="5" column="5" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/dao/neo4j/repository/LoanInfoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/dao/neo4j/repository/UserInfoRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="63" selection-start-line="16" selection-start-column="63" selection-end-line="16" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/dao/neo4j/repository/UserLoanRelationRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/GraphApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/test/java/cn/com/cootoo/graph/GraphApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/sort/SortSolutions.java">
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/test/java/cn/com/cootoo/graph/GraphApplicationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-214">
-          <caret line="92" column="17" selection-start-line="92" selection-start-column="17" selection-end-line="92" selection-end-column="17" />
+        <state relative-caret-position="71">
+          <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ct-server-service/src/main/java/cn/com/cootoo/sort/HeapSort.java">
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/service/BaseService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="31" column="15" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/service/LoanInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/service/UserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/node/LoanInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="24" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/node/UserInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
-          <caret line="20" column="40" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+          <caret line="22" column="24" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/relation/UserLoanRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/base/BaseNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/model/neo4j/base/BaseRelation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/service/UserLoanRelationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="43" column="28" selection-start-line="43" selection-start-column="28" selection-end-line="43" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/src/main/java/cn/com/cootoo/graph/dao/bizz/risk/LoanDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="581">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/ct.base.demo.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ct-base-graph/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -2139,7 +2360,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>ct-base-demo</last-edited>
+          <last-edited>cootoo</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

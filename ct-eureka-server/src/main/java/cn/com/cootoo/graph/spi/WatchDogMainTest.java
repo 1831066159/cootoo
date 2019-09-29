@@ -1,0 +1,20 @@
+package cn.com.cootoo.graph.spi;
+
+import java.util.ServiceLoader;
+
+/**
+ * @author zhaoxiang
+ * @create 2019/4/25
+ **/
+public class WatchDogMainTest {
+
+    public static void main(String[] args) {
+
+        ServiceLoader<IWatchDogService> loaders = ServiceLoader.load(IWatchDogService.class);
+
+        for (IWatchDogService watchDog : loaders) {
+            watchDog.watcher();
+        }
+
+    }
+}

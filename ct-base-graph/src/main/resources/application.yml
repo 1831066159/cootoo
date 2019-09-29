@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: data-graph
+  server:
+    port: 8066
+
+  data:
+    #
+    neo4j:
+      uri: bolt://192.168.100.153:7687
+      username:
+      password:
+    #
+    mongodb:
+      #
+      riskMongoTemplate:
+        host: 192.168.100.111
+        port: 27017
+        database: x_datacollection_1
+        username: admin1
+        password: passwd1
+      #
+      xiaohuMongoTemplate:
+        host: 192.168.100.153
+        port: 27017
+        database: x_datacollection
+        username: admin2
+        password: passwd2
