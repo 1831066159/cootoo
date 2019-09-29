@@ -1,5 +1,7 @@
 .gradle
 .DS_Store
+.idea
+.mvn
 *.project
 *.settings
 *.project

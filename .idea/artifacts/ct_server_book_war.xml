@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="ct-server-book:war">
-    <output-path>$PROJECT_DIR$/ct-server-book/target</output-path>
-    <root id="archive" name="spring-boot-starter-parent-2.0.2.RELEASE.war">
-      <element id="artifact" artifact-name="ct-server-book:war exploded" />
-    </root>
-  </artifact>
-</component>
