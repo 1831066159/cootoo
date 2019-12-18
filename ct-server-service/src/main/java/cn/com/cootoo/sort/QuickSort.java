@@ -16,6 +16,7 @@ public class QuickSort {
      * 重复步骤,直到最后都变成单个元素,整个数组就成了有序的序列。
      */
     public static void sort_quick(int[] arr) {
+
         sort(arr, 0, arr.length - 1);
     }
 
@@ -106,4 +107,16 @@ public class QuickSort {
         arr[right] = temp;
         return right;
     }
+
+
+    public static void main(String[] args) {
+        int[] arr = {2, 6, 7, 456, 3, 3, 234, 567, 45, 6, 3, 4, 9, 7, 8, 7, 6, 6, 2, 3, 42, 34, 1, 213, 21, 23, 345, 3, 45};
+        sort_quick(arr);
+        for (int i : arr) {
+            System.out.println(i);
+        }
+
+    }
+
+
 }

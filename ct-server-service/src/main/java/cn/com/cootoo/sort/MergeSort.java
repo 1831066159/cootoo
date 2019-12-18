@@ -8,6 +8,7 @@ package cn.com.cootoo.sort;
  **/
 public class MergeSort {
 
+
     /**
      * 归并排序
      *
@@ -72,5 +73,14 @@ public class MergeSort {
         }
     }
 
+
+    public static void main(String[] args) {
+        int[]  arr = {1,6,23,12,3,6,19,222,66,666};
+        sort(arr);
+        for(int i:arr){
+            System.out.println(i);
+        }
+
+    }
 
 }

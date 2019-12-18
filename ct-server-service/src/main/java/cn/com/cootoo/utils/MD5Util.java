@@ -1,7 +1,5 @@
 package cn.com.cootoo.utils;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.security.MessageDigest;
 
@@ -9,39 +7,40 @@ import java.security.MessageDigest;
  * <p>
  * MD5Util class.
  * </p>
- * 
+ *
  * @author xingtaoshi
  * @version $Id: $Id
  */
 public class MD5Util {
 
-    private static final Logger LOGGER = LoggerFactory.getLogger(MD5Util.class);
 
-    private static final char[] HEX_DIGITS = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd',
-            'e', 'f' };
+    private static final char[] HEX_DIGITS = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'a', 'b', 'c', 'd',
+            'e', 'f'};
 
 
     /**
      * 将arg直接拼接然后md5
+     *
      * @param arg
      * @return
      */
-    public static String md5hash(String...arg){
-        StringBuffer sb=new StringBuffer();
-        if(arg!=null){
-            for(String s:arg){
+    public static String md5hash(String... arg) {
+        StringBuffer sb = new StringBuffer();
+        if (arg != null) {
+            for (String s : arg) {
                 sb.append(s);
             }
-        }else{
+        } else {
             return "";
         }
         return md5(sb.toString());
     }
+
     /**
      * <p>
      * md5.
      * </p>
-     * 
+     *
      * @param arg a {@link String} object.
      * @return a {@link String} object.
      */
@@ -54,7 +53,7 @@ public class MD5Util {
             md5 = MessageDigest.getInstance("MD5");
             md5.update(arg.getBytes("UTF-8"));
         } catch (Exception e) {
-            LOGGER.error(e.getMessage(), e);
+
         }
         if (null != md5) {
             return toHex(md5.digest());
@@ -75,10 +74,10 @@ public class MD5Util {
      * <p>
      * range.
      * </p>
-     * 
+     *
      * @param value a {@link Object} object.
-     * @param max a int.
-     * @param min a int.
+     * @param max   a int.
+     * @param min   a int.
      * @return a int.
      */
     public static int range(Object value, int max, int min) {
@@ -93,7 +92,7 @@ public class MD5Util {
      * <p>
      * intval.
      * </p>
-     * 
+     *
      * @param s a {@link String} object.
      * @return a int.
      */
@@ -105,8 +104,8 @@ public class MD5Util {
      * <p>
      * intval.
      * </p>
-     * 
-     * @param s a {@link String} object.
+     *
+     * @param s     a {@link String} object.
      * @param radix a int.
      * @return a int.
      */
