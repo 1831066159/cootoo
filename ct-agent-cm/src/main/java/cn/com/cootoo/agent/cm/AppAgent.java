@@ -1,5 +1,7 @@
 package cn.com.cootoo.agent.cm;
 
+import cn.com.cootoo.agent.cm.transform.AppTransform;
+
 import java.lang.instrument.Instrumentation;
 
 /**
@@ -7,7 +9,7 @@ import java.lang.instrument.Instrumentation;
  * Date 2019/12/20 9:39 上午
  * Description
  */
-public class PreApplication {
+public class AppAgent {
 
 
     /**
@@ -19,8 +21,11 @@ public class PreApplication {
      * @param inst
      */
     public static void premain(String agentOps, Instrumentation inst) {
-        System.out.println("=====================main方法前执行");
+        System.out.println("====Agent代理1执行");
         System.out.println(agentOps);
+        // 添加Transformer
+        inst.addTransformer(new AppTransform());
+        System.out.println("Transform end");
     }
 
 
@@ -31,7 +36,7 @@ public class PreApplication {
      * @param agentOps
      */
     public static void premain(String agentOps) {
-        System.out.println("=====================main方法前执行2");
+        System.out.println("====Agent代理2执行");
         System.out.println(agentOps);
     }
 
