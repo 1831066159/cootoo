@@ -1,0 +1,3 @@
+Manifest-Version: 1.0
+Premain-Class: cn.com.cootoo.agent.cm.PreApplication
+Can-Redefine-Classes: true

@@ -1,0 +1,25 @@
+### IntelliJ IDEA ###
+.idea
+.mvn
+*.iws
+*.iml
+*.ipr
+.gradle
+.DS_Store
+*.project
+*.settings
+*.project
+*.classpath
+*.settings
+*.class
+*.swp
+*.bak
+*.iml
+*.zip
+*.checkstyle
+target
+bin
+build
+/.idea
+target
+out
