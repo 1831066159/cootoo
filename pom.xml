@@ -17,6 +17,7 @@
         <module>ct-server-admin</module>
         <module>ct-agent-cm</module>
         <module>ct-agent-pm</module>
+        <module>ct-design-model</module>
     </modules>
 
     <parent>
