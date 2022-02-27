@@ -4,7 +4,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2018/12/26
  **/
 @Controller

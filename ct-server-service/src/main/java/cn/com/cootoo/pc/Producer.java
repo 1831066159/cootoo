@@ -10,7 +10,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * <p>
  * 生产者消费者模型
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/5/20
  **/
 public class Producer implements Runnable {

@@ -1,7 +1,7 @@
 package cn.com.cootoo.proxy;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/8/9
  **/
 public class TestImpl implements ITest {

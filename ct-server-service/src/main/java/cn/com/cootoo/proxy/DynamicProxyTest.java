@@ -7,7 +7,7 @@ import java.lang.reflect.Proxy;
 /**
  * jdk动态代理
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/8/9
  **/
 public class DynamicProxyTest implements InvocationHandler {

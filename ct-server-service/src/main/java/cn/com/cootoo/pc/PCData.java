@@ -3,7 +3,7 @@ package cn.com.cootoo.pc;
 /**
  * 容器数据类型
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/5/20
  **/
 public class PCData {

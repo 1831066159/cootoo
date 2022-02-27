@@ -7,7 +7,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2017/9/4
  **/
 public class GenerateIdUtil {

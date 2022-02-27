@@ -1,7 +1,7 @@
 package cn.com.cootoo.hbase;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/7/31
  **/
 public class User {

@@ -3,7 +3,7 @@ package cn.com.cootoo.sort;
 /**
  * 归并排序
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/6/17
  **/
 public class MergeSort {

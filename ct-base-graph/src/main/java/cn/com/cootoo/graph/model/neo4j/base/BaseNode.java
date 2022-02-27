@@ -10,7 +10,7 @@ import java.util.Date;
 /**
  * 节点基类
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/9/24
  **/
 public abstract class BaseNode {

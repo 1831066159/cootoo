@@ -1,7 +1,7 @@
 package cn.com.cootoo.sort;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/6/17
  **/
 public class SortSolutions {

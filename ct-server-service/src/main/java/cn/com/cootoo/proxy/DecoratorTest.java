@@ -2,7 +2,7 @@ package cn.com.cootoo.proxy;
 
 /**
  * 装饰器
- * @author zhaoxiang
+ * @author system
  * @create 2019/8/9
  **/
 public class DecoratorTest implements ITest {

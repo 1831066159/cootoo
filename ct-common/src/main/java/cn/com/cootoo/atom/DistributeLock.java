@@ -14,7 +14,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/8/20
  **/
 public class DistributeLock {

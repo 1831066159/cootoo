@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 /**
  * 配置Mongodb数据库连接池信息
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/9/27
  **/
 @Configuration

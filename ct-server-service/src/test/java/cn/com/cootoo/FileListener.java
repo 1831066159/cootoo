@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * 文件监听
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/5/20
  **/
 public class FileListener extends FileAlterationListenerAdaptor {

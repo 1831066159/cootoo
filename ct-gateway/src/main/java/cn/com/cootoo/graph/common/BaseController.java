@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/8/16
  **/
 @Controller

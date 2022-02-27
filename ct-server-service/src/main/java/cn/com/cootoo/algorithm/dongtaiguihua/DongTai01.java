@@ -3,7 +3,7 @@ package cn.com.cootoo.algorithm.dongtaiguihua;
 /**
  * https://blog.csdn.net/zw6161080123/article/details/80639932
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/8/15
  **/
 public class DongTai01 {

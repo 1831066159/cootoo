@@ -15,7 +15,7 @@ import java.util.Map;
 
 /**
  * jdk1.6动态代理，基于javassit
- * Created by zhaoxiang
+ * Created by system
  * Date 2019/12/20 11:46 上午
  * Description
  */

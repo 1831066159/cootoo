@@ -10,7 +10,7 @@ import org.neo4j.ogm.annotation.NodeEntity;
 import org.neo4j.ogm.annotation.Property;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/9/19
  * <p>
  * 1、'review_status'  字段处理： '通过' if ‘biz_status_name’ in ('已结清', '审核通过', '已逾期', '还款中', '放标中') else ('拒绝' if  ‘biz_status_name’ in ('审核拒绝') else '其它'))；

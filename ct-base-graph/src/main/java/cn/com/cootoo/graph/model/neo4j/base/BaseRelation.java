@@ -8,7 +8,7 @@ import org.neo4j.ogm.annotation.*;
 /**
  * 关系基类
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/9/24
  **/
 @Data

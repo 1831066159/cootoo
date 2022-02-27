@@ -7,21 +7,21 @@ spring:
   data:
     #
     neo4j:
-      uri: bolt://192.168.100.153:7687
+      uri: bolt://192.168.1.2:7687
       username:
       password:
     #
     mongodb:
       #
       riskMongoTemplate:
-        host: 192.168.100.111
+        host: 192.168.1.2
         port: 27017
         database: x_datacollection_1
         username: admin1
         password: passwd1
       #
       xiaohuMongoTemplate:
-        host: 192.168.100.153
+        host: 192.168.1.3
         port: 27017
         database: x_datacollection
         username: admin2

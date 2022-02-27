@@ -6,7 +6,7 @@ import org.junit.Test;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/5/17
  **/
 public class TestRateLimiter {

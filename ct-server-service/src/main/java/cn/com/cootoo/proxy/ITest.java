@@ -1,7 +1,9 @@
 package cn.com.cootoo.proxy;
 
 /**
- * @author zhaoxiang
+ * 定义接口
+ *
+ * @author system
  * @create 2019/8/9
  **/
 public interface ITest {

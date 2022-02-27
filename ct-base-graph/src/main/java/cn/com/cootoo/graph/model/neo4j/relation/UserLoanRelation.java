@@ -11,7 +11,7 @@ import org.neo4j.ogm.annotation.Property;
 import org.neo4j.ogm.annotation.RelationshipEntity;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/9/11
  **/
 @Getter

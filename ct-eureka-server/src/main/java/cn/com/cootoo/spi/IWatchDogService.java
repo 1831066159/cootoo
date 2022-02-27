@@ -1,7 +1,7 @@
 package cn.com.cootoo.spi;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/4/25
  **/
 public interface IWatchDogService {

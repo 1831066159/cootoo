@@ -3,7 +3,7 @@ package cn.com.cootoo.spi;
 import java.util.ServiceLoader;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/4/25
  **/
 public class WatchDogMainTest {

@@ -4,7 +4,7 @@ package cn.com.cootoo.sort;
  * 快速排序的时间复杂度是 O(nlogn),极端情况下会退化成 O(n2)
  * 空间复杂度为 O(1)。
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/6/17
  **/
 public class QuickSort {
@@ -20,6 +20,12 @@ public class QuickSort {
         sort(arr, 0, arr.length - 1);
     }
 
+
+    /**
+     * @param arr
+     * @param startIndex
+     * @param endIndex
+     */
     private static void sort(int[] arr, int startIndex, int endIndex) {
         if (endIndex <= startIndex) {
             return;
@@ -27,7 +33,7 @@ public class QuickSort {
         //算法排序 切分 - 单边
         int pivotIndex = partition(arr, startIndex, endIndex);
         //算法排序 切分 - 双边
-        // int pivotIndex = partition(arr, startIndex, endIndex);
+        // int pivotIndex = partitionV2(arr, startIndex, endIndex);
 
         sort(arr, startIndex, pivotIndex - 1);
         sort(arr, pivotIndex + 1, endIndex);
@@ -39,7 +45,7 @@ public class QuickSort {
      * @param arr
      * @param startIndex
      * @param endIndex
-     * @return
+     * @return 99, 2, 6, 7, 456, 3, 3, 234, 567, 45, 6, 3,
      */
     private static int partition(int[] arr, int startIndex, int endIndex) {
         int pivot = arr[startIndex];//取基准值
@@ -110,10 +116,10 @@ public class QuickSort {
 
 
     public static void main(String[] args) {
-        int[] arr = {2, 6, 7, 456, 3, 3, 234, 567, 45, 6, 3, 4, 9, 7, 8, 7, 6, 6, 2, 3, 42, 34, 1, 213, 21, 23, 345, 3, 45};
+        int[] arr = {99, 2, 6, 7, 456, 3, 3, 234, 567, 45, 6, 3, 4, 9, 7, 8, 7, 6, 6, 2, 3, 42, 34, 1, 213, 21, 23, 345, 3, 45};
         sort_quick(arr);
         for (int i : arr) {
-            System.out.println(i);
+            //System.out.println(i);
         }
 
     }

@@ -5,7 +5,7 @@ import java.util.LinkedList;
 /**
  * https://leetcode-cn.com/problems/add-two-numbers/
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/6/10
  **/
 public class Solution_1 {

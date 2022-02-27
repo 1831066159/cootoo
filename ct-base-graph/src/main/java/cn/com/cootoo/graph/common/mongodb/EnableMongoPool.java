@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 /**
  * Mongodb数据库支持多数据源连接池
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/9/27
  **/
 @Target({ElementType.TYPE})

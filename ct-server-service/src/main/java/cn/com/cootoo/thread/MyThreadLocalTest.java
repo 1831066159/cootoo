@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  * <p>
  * 而线程池是对线程进行复用的，如果没有及时的清理，那么之前对该线程的使用，就会影响到后面的线程了，造成数据不准确。
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/7/18
  **/
 public class MyThreadLocalTest {

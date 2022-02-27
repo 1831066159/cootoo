@@ -3,7 +3,7 @@ package cn.com.cootoo.graph.constant;
 /**
  * neo4j 关系类型定义
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/9/24
  **/
 public interface EasyRelationType {

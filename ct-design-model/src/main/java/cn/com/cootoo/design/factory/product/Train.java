@@ -4,7 +4,7 @@ import cn.com.cootoo.design.factory.Product;
 
 /**
  * 具体产品
- * Created by zhaoxiang
+ * Created by system
  * Date 2020/1/16 11:26 上午
  * Description
  */

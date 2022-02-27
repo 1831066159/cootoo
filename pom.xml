@@ -18,6 +18,8 @@
         <module>ct-agent-cm</module>
         <module>ct-agent-pm</module>
         <module>ct-design-model</module>
+        <module>ct-webull</module>
+        <module>ct-server-service</module>
     </modules>
 
     <parent>

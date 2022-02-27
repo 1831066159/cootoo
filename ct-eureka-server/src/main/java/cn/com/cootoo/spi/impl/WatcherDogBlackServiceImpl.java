@@ -3,7 +3,7 @@ package cn.com.cootoo.spi.impl;
 import cn.com.cootoo.spi.IWatchDogService;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/4/25
  **/
 public class WatcherDogBlackServiceImpl implements IWatchDogService {

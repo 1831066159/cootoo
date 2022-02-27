@@ -13,7 +13,7 @@ import org.neo4j.ogm.annotation.Property;
 /**
  * 用户基本信息
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/9/19
  **/
 @Getter

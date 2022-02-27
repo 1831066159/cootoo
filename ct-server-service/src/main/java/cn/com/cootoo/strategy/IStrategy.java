@@ -2,7 +2,7 @@ package cn.com.cootoo.strategy;
 
 /**
  * 策略接口
- * Created by zhaoxiang
+ * Created by system
  * Date 2019/12/18 4:27 下午
  * Description
  */

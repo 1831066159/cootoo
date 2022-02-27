@@ -3,7 +3,7 @@ package cn.com.cootoo.limit;
 import com.google.common.util.concurrent.RateLimiter;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/8/9
  **/
 public class RateLimiterDemo {

@@ -8,7 +8,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 /**
  * 测试主函数
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/5/20
  **/
 public class TestMain {

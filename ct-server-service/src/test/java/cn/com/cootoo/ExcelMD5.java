@@ -11,15 +11,15 @@ import java.io.File;
 import java.io.FileOutputStream;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/6/28
  **/
 public class ExcelMD5 {
 
 
     public static void main(String[] args) throws Exception {
-        File xlsFile = new File("/Users/zhaoxiang/Documents/mawensi_data.xlsx");
-        File md5File = new File("/Users/zhaoxiang/Documents/mawensi_md5.xlsx");
+        File xlsFile = new File("/Users/system/Documents/mawensi_data.xlsx");
+        File md5File = new File("/Users/system/Documents/mawensi_md5.xlsx");
         // 获得源数据工作簿
         Workbook workbook = WorkbookFactory.create(xlsFile);
 

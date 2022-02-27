@@ -6,7 +6,7 @@ import org.springframework.data.neo4j.repository.Neo4jRepository;
 import org.springframework.stereotype.Component;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/9/11
  **/
 @Component

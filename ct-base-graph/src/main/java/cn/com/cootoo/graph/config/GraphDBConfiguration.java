@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 /**
  * neo4j配置
  *
- * @author zhaoxiang
+ * @author system
  * @create 2019/9/11
  **/
 @Configuration

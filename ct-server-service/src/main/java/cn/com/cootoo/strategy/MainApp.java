@@ -2,7 +2,7 @@ package cn.com.cootoo.strategy;
 
 /**
  * 策略
- * Created by zhaoxiang
+ * Created by system
  * Date 2019/12/18 4:37 下午
  * Description
  */

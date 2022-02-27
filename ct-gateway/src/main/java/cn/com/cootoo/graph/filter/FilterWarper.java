@@ -16,7 +16,7 @@ import java.util.Map;
 import static org.springframework.cloud.netflix.zuul.filters.support.FilterConstants.PRE_TYPE;
 
 /**
- * @author zhaoxiang
+ * @author system
  * @create 2019/8/16
  **/
 public class FilterWarper extends ZuulFilter {

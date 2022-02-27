@@ -16,7 +16,7 @@ import java.util.regex.Pattern;
 
 
 /**
- * @Author: Zhaoxiang
+ * @Author: system
  * @Date: 2021/4/17
  */
 public class IdCardService {
@@ -151,9 +151,10 @@ public class IdCardService {
     public static void main(String[] args) {
         try {
             List<String> list = Arrays.asList(
-                    "赵祥,15010319820214201X",
-                    "赵翔,310110198109241017",
-                    "赵翔,420106197310144012"
+                    "赵翔,152824198610096616"
+//                    "赵祥,15010319820214201X",
+//                    "赵翔,310110198109241017",
+//                    "赵翔,420106197310144012"
 //                    "赵翔,61052519800909001X",
 //                    "赵翔,310113198401154833",
 //                    "赵翔,321321198403256810",
